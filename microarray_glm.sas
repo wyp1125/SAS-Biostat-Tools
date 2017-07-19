@@ -8,7 +8,7 @@ by the FDR method*/
 
 /*Import raw expression matrix with multiple levels of headers.
 Column names are coded by A, B, C,...*/
-proc import datafile='/folders/myfolders/gene/exp.xlsx' out=temp
+proc import datafile='/folders/myfolders/gene/exp_data.xlsx' out=temp
             dbms=xlsx replace;
             sheet=Sheet2;
             getnames=NO;
