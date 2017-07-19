@@ -1,10 +1,10 @@
-/*This program realizes a common microarray analysis procedure for quantiatitve traits.
-1) Process microarray expression matrix with different levels of headers includding the
-phenotype (e.g. weight), gender and race;
-2) Build a linear regression model between each gene's expression profile and the phenotype
-by considering gender and race;
-3) Ouptut the pvalue of each gene into a dataset which is then corrected for multiple tests
-by the FDR method*/   
+/*
+microarray_glm.sas detects differentially expressed genes associated with quantitative traits from microarray datasets using linear regression which includes gender and race as categorical variables. A sample data "exp_data.xlsx" is included.
+It works as follows:
+i) Process a microarray expression matrix with different levels of headers including the phenotype (e.g. weight), gender and race;
+ii) Build a linear regression model between each gene's expression profile and the phenotype which includes gender and race as categorical variable;
+iii) Ouptut the pvalue of each gene into a dataset which is then corrected for multiple tests by the FDR method
+*/   
 
 /*Import raw expression matrix with multiple levels of headers.
 Column names are coded by A, B, C,...*/
