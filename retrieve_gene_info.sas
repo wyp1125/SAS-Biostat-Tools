@@ -1,3 +1,4 @@
+/*retrieve_gene_info.sas retrieves genomic information from Ensembl Biomart output for a set gene names*/
 proc import datafile='/folders/myfolders/gene/ensembl.txt'
          out=ensembl
          dbms=dlm
