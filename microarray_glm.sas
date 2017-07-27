@@ -134,6 +134,18 @@ id id;
 run;
 
 /*Merge the transposed phenotype, gender, race and expression datasets for statistical analysis*/
+proc sort data=pheno1;
+by _name_;
+
+proc sort data=gender1;
+by _name_;
+
+proc sort data=race1;
+by _name_;
+
+proc sort data=exprs2;
+by _name_;
+
 data stat;
 merge pheno1 gender1 race1 exprs2;
 by _name_;
