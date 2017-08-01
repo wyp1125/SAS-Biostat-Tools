@@ -9,3 +9,5 @@ It works as follows:<br />
    iii) Ouptut the pvalue of each gene into a dataset which is then corrected for multiple tests by the FDR method
    
 2) retrieve_gene_info.sas retrieves genomic information from Ensembl Biomart output for a set gene names
+
+3) microarray_merge_repeats.sas merges repeated measures of samples in microarray data
