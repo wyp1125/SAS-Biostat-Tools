@@ -11,3 +11,5 @@ It works as follows:<br />
 2) retrieve_gene_info.sas retrieves genomic information from Ensembl Biomart output for a set gene names
 
 3) microarray_merge_repeats.sas merges repeated measures of samples in microarray data
+
+4) detailed_freq.sas merges two tables and then derives detailed frequencies for the 'weight' variable
