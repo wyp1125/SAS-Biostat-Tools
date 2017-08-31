@@ -41,7 +41,7 @@ select trim(left(name)), trim(left(newname)),
 into :c_list separated by ' ', :n_list separated by ' ',  
      :renam_list separated by ' '                         
 from vars;                                                
-quit;
+run;
 
 %put &n_list;
 
