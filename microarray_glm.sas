@@ -162,7 +162,7 @@ obss = attrn(dsid,"NLOBS")-4;
 call symput('nprob',compress(put(obss,5.)));
 run;
 
-/*Retrive all probe_ids and store them as macro variables*/
+/*Retrieve all probe_ids and store them as macro variables*/
 proc sql noprint;
 select name into: pid1- :pid&nprob from stat_var
 where name not in ('_name_','gender','race','weight');
